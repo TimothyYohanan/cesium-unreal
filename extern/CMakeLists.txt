@@ -33,7 +33,7 @@ endif()
 
 # Rename sqlite3* symbols to cesium_sqlite3* so they don't conflict with UE's sqlite3,
 # which has a bunch of limitations and is not considered public.
-set(PRIVATE_CESIUM_SQLITE ON)
+set(PRIVATE_CESIUM_SQLITE OFF)
 
 set(CMAKE_MSVC_RUNTIME_LIBRARY MultiThreadedDLL)
 set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_LIST_DIR}/../Source/ThirdParty)
